@@ -1,15 +1,36 @@
 .morph-modal {
+  backdrop-filter: blur(8px);
+  background: hsl(var(--clr-sec-95)/66%);
   display: none;
   position: relative;
+  -webkit-backdrop-filter: blur(8px);
+  overflow: hidden;
 }
 .morph-modal.show {
   display: block;
   position: fixed;
   z-index: 1001;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: left, width, top, height, right, bottom;
-  transition-property: left, width, top, height, right, bottom;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.morph-modal.shown .morph-modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 64px;
+  padding: 16px 32px;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: hsl(var(--clr-n-100));
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .morph-modal.shown .morph-modal-content {
   opacity: 1;
@@ -28,10 +49,10 @@
   top: 10% !important;
 }
 .morph-modal.one-third-right {
-  bottom: 5% !important;
+  bottom: calc(8px + 0.625vmax) !important;
   left: 66% !important;
-  right: 5% !important;
-  top: 5% !important;
+  right: calc(8px + 0.625vmax) !important;
+  top: calc(8px + 0.625vmax) !important;
 }
 .morph-modal.fullscreen {
   bottom: 0 !important;
@@ -50,14 +71,30 @@
   top: 0;
 }
 
+.morph-modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  padding: 16px 32px;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+
 .morph-modal-content {
   opacity: 0;
   visibility: hidden;
 }
 
 #morph-modal-overlay {
-  -webkit-transition: opacity 0.4s ease;
-  background: #000;
+  background: hsl(var(--clr-n-0)/50%);
   bottom: 0;
   display: block;
   left: 0;
@@ -65,10 +102,13 @@
   position: fixed;
   right: 0;
   top: 0;
-  transition: opacity 0.4s ease;
-  z-index: -1;
+  visibility: hidden;
+  z-index: 101;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 #morph-modal-overlay.show {
-  opacity: 0.6;
+  opacity: 1;
+  visibility: visible;
   z-index: 1000;
 }
