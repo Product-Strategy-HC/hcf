@@ -89,7 +89,7 @@
   --clr-n-98: 1 0% 98%;
   --clr-n-100: 1 0% 100%;
   --clr-txt: 260 35% 10%;
-  --font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  --font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "MS Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 .rounded-xs {
@@ -1510,40 +1510,6 @@
   white-space: nowrap;
   word-wrap: break-word;
   overflow: visible;
-}
-
-.font-test {
-  color: var(--clr-txt);
-  font-family: var(--font-family);
-  font-size: calc(var(--computedFontSize) * 1px);
-  line-height: var(--line-height-100);
-}
-
-.bbbb {
-  /* font metrics */
-  --font-family: "Noto Sans JP", sans-serif;
-  --fm-capitalHeight: .733;
-  --fm-descender: .288;
-  --fm-ascender: 1.16;
-  --fm-linegap: 0;
-  /* desired font-size for capital height */
-  --capital-height: 64;
-  /* apply font-family */
-  font-family: var(--font);
-  /* compute font-size to get capital height equal desired font-size */
-  --computedFontSize: (var(--capital-height) / var(--fm-capitalHeight));
-  font-size: calc(var(--computedFontSize) * 1px);
-  --lineheightNormal: (var(--fm-ascender) + var(--fm-descender) + var(--fm-linegap));
-  --contentArea: (var(--lineheightNormal) * var(--computedFontSize));
-  --distanceBottom: (var(--fm-descender));
-  --distanceTop: (var(--fm-ascender) - var(--fm-capitalHeight));
-  --valign: ((var(--distanceBottom) - var(--distanceTop)) * var(--computedFontSize));
-  --line-height: 1;
-  line-height: calc((var(--line-height) * var(--capital-height) - var(--valign)) * 1px);
-}
-
-.cccc {
-  vertical-align: calc(var(--valign) * -1px);
 }
 
 .hero-large {
