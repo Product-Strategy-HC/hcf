@@ -2959,9 +2959,9 @@ nav .desktop-nav {
   }
 }
 
-.img-home-services-1 {
+.service-1 {
   aspect-ratio: 1/1;
-  background-image: url("../assets/service-icon.svg");
+  background-image: url("../assets/service-1.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2971,9 +2971,81 @@ nav .desktop-nav {
   width: 100%;
 }
 
-.pm-service {
+.service-2 {
   aspect-ratio: 1/1;
-  background-image: url("../assets/pm-ico.svg");
+  background-image: url("../assets/service-2.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.service-3 {
+  aspect-ratio: 1/1;
+  background-image: url("../assets/service-3.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.service-4 {
+  aspect-ratio: 1/1;
+  background-image: url("../assets/service-4.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.service-5 {
+  aspect-ratio: 1/1;
+  background-image: url("../assets/service-5.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.service-6 {
+  aspect-ratio: 1/1;
+  background-image: url("../assets/service-6.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.service-7 {
+  aspect-ratio: 1/1;
+  background-image: url("../assets/service-7.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.service-8 {
+  aspect-ratio: 1/1;
+  background-image: url("../assets/service-8.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
