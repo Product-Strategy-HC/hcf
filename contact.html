@@ -243,101 +243,287 @@
 
         <section id="contact" class="sa-vertical bg-clr-sec-93">
 
-            <div class="item-column w-100 sa-horizontal g-respo-xh jc-center ai-center">
-                <p>サービスに関するお問い合わせ</p>
-                <p>お問い合わせの内容によっては回答に日数を要したり、回答できない場合もあります。</p>
-                <p>また、セールス・勧誘等は固くお断りします。送信いただいても対応いたしかねますので、あらかじめご了承ください。</p>
-                <p>*は入力必須項目です。</p>
+            <div class="item-column w-100 sa-horizontal g-respo-xl jc-center ai-center">
 
-                <form class="item-column flex-1 p-respo-xs jc-dist ai-center bg-clr-sec-pale rounded-sm hairline-txt" action="<insert-here-submit-contact-details-url>" method="post">
-                    <div class="item">
-                        <div>お問い合わせ内容</div>
-                        <div class="item">
-                            <input type="radio" id="field1-ipo" name="field1" value="ipo">
-                            <label class="input-label" for="field1-ipo">米国上場 (IPO)</label>
+                <div class="item-column w-100 g-static-sm">
 
-                            <input type="radio" id="field2-other" name="field1" value="other">
-                            <label class="input-label" for="field2-other">その他</label>
-                        </div>
+                    <div class="headline bold line-150">サービスに関するお問い合わせ</div>
+
+                    <div class="item-column g-static-tn">
+
+                        <div class="body regular line-150">お問い合わせの内容によっては回答に日数を要したり、回答できない場合もあります。</div>
+                        <div class="body regular line-150">また、セールス・勧誘等は固くお断りします。送信いただいても対応いたしかねますので、あらかじめご了承ください。</div>
+
                     </div>
+                    
+                </div>
 
-                    <div class="item">
-                        <label class="input-label" for="field2">会社名<span class="subheadline bold line-100 txt-clr-pri-40">*</span></label>
-                        <input class="input-form" id="field2" name="field2" type="text" placeholder="ハートコア株式会社">
-                    </div>
+                <div class="item-column w-100 g-static-xs">
 
-                    <div class="item">
-                        <label class="input-label" for="field3">氏名<span class="subheadline bold line-100 txt-clr-pri-40">*</span></label>
-                        <input class="input-form" id="field3" name="field3" type="text" placeholder="山田 太郎">
-                    </div>
+                    <div class="contact-label">は入力必須項目です。</div>
 
-                    <div class="item">
-                        <label class="input-label" for="field4">フリガナ<span class="subheadline bold line-100 txt-clr-pri-40">*</span></label>
-                        <input class="input-form" id="field4" name="field4" type="text" placeholder="ヤマダ タロウ">
-                    </div>
+                    <form class="item-column w-100 g-respo-xl p-respo-xh jc-dist ai-center bg-clr-sec-pale rounded-sm hairline-txt" action="<insert-here-submit-contact-details-url>" method="post">
 
-                    <div class="item">
-                        <label class="input-label" for="field5">電話番号</label>
-                        <input class="input-form" id="field5" name="field5" type="text" placeholder="000-0000-0000">
-                    </div>
+                        <div class="item w-100 ai-center">
 
-                    <div class="item">
-                        <label class="input-label" for="field6">メールアドレス<span class="subheadline bold line-100 txt-clr-pri-40">*</span></label>
-                        <input class="input-form" id="field6" name="field6" type="text" placeholder="heartcorefinancial@xxx.xxx">
-                    </div>
+                            <div class="item w-20">
 
-                    <div class="item">
-                        <label class="input-label" for="field7">貴社HPのURL<span class="subheadline bold line-100 txt-clr-pri-40">*</span></label>
-                        <input class="input-form" id="field7" name="field7" type="text" placeholder="https://www.sample.co.jp/">
-                    </div>
+                                <div class="form-label">お問い合わせ内容</div>
 
-                    <div class="item">
-                        <label class="input-label" for="field8">お問い合わせ内容</label>
-                        <textarea class="input-form" id="field8" name="field8" cols="30" rows="10" placeholder="お問い合わせを内容を入力してください"></textarea>
-                    </div>
-
-                    <div class="item">
-                        <div>お打ち合わせ希望日時<span class="subheadline bold line-100 txt-clr-pri-40">*</span></div>
-
-                        <div>
-                            <div class="item">
-                                <label class="input-label" for="field9">第1候補</label>
-                                <input class="input-form" id="field9" name="field9" type="text" placeholder="00月00日_00時00分">
                             </div>
-                            <div class="item">
-                                <label class="input-label" for="field10">第2候補</label>
-                                <input class="input-form" id="field10" name="field10" type="text" placeholder="00月00日_00時00分">
-                            </div>
-                            <div class="item">
-                                <label class="input-label" for="field11">第3候補</label>
-                                <input class="input-form" id="field11" name="field11" type="text" placeholder="00月00日_00時00分">
-                            </div>
-                        </div>
-                    </div>
 
-                    <div>
-                        <p>同意事項<span class="subheadline bold line-100 txt-clr-pri-40">*</span></p>
-                        <div class="item">
-                            <input type="checkbox" id="field12" name="field12" />
-                            <label class="input-label" for="field12">個人情報の取り扱いに同意</label>
-                        </div>
-                        <p>個人情報の取り扱いは <a href="/privacy.html" target="_blank">こちら</a></p>
-                    </div>
+                            <div class="item w-60 g-static-xl">
 
-                    <button class="btn primary-btn primary flat-light rounded-sm" type="submit" role="button">
-                        <span class="item w-min body-xl regular line-100 font-fix-4">送信</span>
-                        <div class="item w-64-fixed square jc-center ai-center">
-                            <div class="arrow-ico">
-                               <div class="arrowhead">
-                                  <svg height="16" viewBox="0 0 8 16" fill="none">
-                                     <path d="M2.16992 1.5L6.50326 8L2.16992 14.5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg>
-                               </div>
-                               <div class="arrowline"></div>
+                                <label class="radio-btn" for="field1-ipo">米国上場 (IPO)
+
+                                    <input type="radio" id="field1-ipo" name="field1" value="ipo" required>>
+                                    <span class="radio-input"></span>
+
+                                </label>
+
+                                <label class="radio-btn" for="field2-other">その他
+
+                                    <input type="radio" id="field2-other" name="field1" value="other" required>>
+                                    <span class="radio-input"></span>
+
+                                </label>
+
                             </div>
+
                         </div>
-                    </button>
-                </form>
+
+                        <div class="divider-h w-100 bg-clr-txt"></div>
+
+                        <div class="item-column w-100 g-static-lg">
+
+                            <div class="item w-100 ai-center">
+
+                                <div class="item w-20">
+    
+                                    <label class="form-label" for="field2">会社名</label>
+    
+                                </div>
+    
+                                <div class="item w-60">
+    
+                                    <input class="input-form" id="field2" name="field2" type="text" placeholder="ハートコア株式会社" required></input>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="item w-100 ai-center">
+    
+                                <div class="item w-20">
+    
+                                    <label class="form-label" for="field3">氏名</label>
+    
+                                </div>
+    
+                                <div class="item w-60">
+    
+                                    <input class="input-form" id="field3" name="field3" type="text" placeholder="山田 太郎" required></input>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="item w-100 ai-center">
+    
+                                <div class="item w-20">
+    
+                                    <label class="form-label" for="field4">フリガナ</label>
+    
+                                </div>
+    
+                                <div class="item w-60">
+    
+                                    <input class="input-form" id="field4" name="field4" type="text" placeholder="ヤマダ タロウ" required></input>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="item w-100 ai-center">
+    
+                                <div class="item w-20">
+    
+                                    <label class="form-label-nr" for="field5">電話番号</label>
+    
+                                </div>
+    
+                                <div class="item w-60">
+    
+                                    <input class="input-form" id="field5" name="field5" type="text" placeholder="00-0000-0000"></input>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="item w-100 ai-center">
+    
+                                <div class="item w-20">
+    
+                                    <label class="form-label" for="field6">メールアドレス</label>
+    
+                                </div>
+    
+                                <div class="item w-60">
+    
+                                    <input class="input-form" id="field6" name="field6" type="email" placeholder="heartcorefinancial@xxx.xxx" required></input>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="item w-100 ai-center">
+    
+                                <div class="item w-20">
+    
+                                    <label class="form-label" for="field7">貴社HPのURL</label>
+    
+                                </div>
+    
+                                <div class="item w-60">
+    
+                                    <input class="input-form" id="field7" name="field7" type="url" placeholder="https://www.sample.co.jp/" required></input>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="item w-100 ai-start">
+    
+                                <div class="item w-20">
+    
+                                    <label class="form-label-nr" for="field8">お問い合わせ内容</label>
+    
+                                </div>
+    
+                                <div class="item w-60">
+    
+                                    <textarea class="textarea" id="field8" name="field8" rows="20" placeholder="お問い合わせを内容を入力してください"></textarea>
+    
+                                </div> 
+    
+                            </div>
+
+                        </div>
+
+                        <div class="divider-h w-100 bg-clr-txt"></div>
+
+                        <div class="item w-100 ai-start">
+    
+                            <div class="item w-20">
+
+                                <div class="form-label" for="field7">お打ち合わせ希望日時</div>
+
+                            </div>
+
+                            <div class="item-column w-60 g-static-sm">
+
+                                <div class="item w-100 ai-center">
+
+                                    <div class="item w-25 p-static-xs-vertical jc-end">
+    
+                                        <label class="form-label-nr" for="field9">第1候補</label>
+    
+                                    </div>
+    
+                                    <div class="item w-50">
+    
+                                        <input class="input-form" id="field9" name="field9" type="text" placeholder="00月00日_00時00分" required></input>
+    
+                                    </div>  
+    
+                                </div>
+
+                                <div class="item w-100 ai-center">
+
+                                    <div class="item w-25 p-static-xs-vertical jc-end">
+    
+                                        <label class="form-label-nr" for="field10">第2候補</label>
+    
+                                    </div>
+    
+                                    <div class="item w-50">
+    
+                                        <input class="input-form" id="field10" name="field10" type="text" placeholder="00月00日_00時00分" required></input>
+    
+                                    </div>  
+    
+                                </div>
+
+                                <div class="item w-100 ai-center">
+
+                                    <div class="item w-25 p-static-xs-vertical jc-end">
+    
+                                        <label class="form-label-nr" for="field11">第3候補</label>
+    
+                                    </div>
+    
+                                    <div class="item w-50">
+    
+                                        <input class="input-form" id="field11" name="field11" type="text" placeholder="00月00日_00時00分" required></input>
+    
+                                    </div>  
+    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item-column w-100 g-static-xs jc-center">
+
+                            <div class="item w-100 jc-start">
+
+                                <div class="form-label">同意事項</div>
+
+                            </div>
+
+                            <div class="item-column w-100 g-static-md p-static-lg ai-center bg-clr-white rounded-sm bg-clr-sec-light thin-pri">
+
+                                <label class="checkbox-btn bold" for="field12">個人情報の取り扱いに同意
+
+                                    <input type="checkbox" id="field12" name="field12" required>
+                                    <span class="checkbox-input"></span>
+
+                                </label>
+
+                                <div class="caption regular line-100">個人情報の取り扱いは <a href="/privacy.html" style="border-bottom: solid" target="_self">こちら</a></div>
+
+                            </div>
+
+                        </div>
+    
+                        <button class="btn primary dark rounded-sm" type="submit" role="button">
+
+                            <span class="item w-min body-xl regular line-100 font-fix-4">送信</span>
+
+                            <div class="item w-64-fixed square jc-center ai-center">
+
+                                <div class="arrow-ico">
+
+                                   <div class="arrowhead">
+
+                                      <svg height="16" viewBox="0 0 8 16" fill="none">
+                                         <path d="M2.16992 1.5L6.50326 8L2.16992 14.5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+
+                                   </div>
+
+                                   <div class="arrowline"></div>
+
+                                </div>
+
+                            </div>
+
+                        </button>
+
+                    </form>
+
+                </div>
 
             </div>
 
@@ -377,7 +563,7 @@
          
                         <div class="body regular line-150 txt-clr-sec-deep">〒100-6006 東京都千代田区霞が関3-2-5<br>霞が関ビルディング6F</div>
          
-                        <a role="button" href="https://maps.app.goo.gl/4MHqPmoYHo7cZx197/" target="_blank" class="body regular line-150 txt-btn-sec">Show on map</a>
+                        <a role="button" href="https://maps.app.goo.gl/L7t7qQLvfzbSJc1f8" target="_blank" class="body regular line-150 txt-btn-sec">Show on map</a>
          
                      </div>
          
