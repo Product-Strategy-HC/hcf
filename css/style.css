@@ -2028,7 +2028,6 @@ a {
 }
 
 .logo-item {
-  background: hsl(0, 0%, 0%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2267,7 +2266,7 @@ table {
   flex: 5;
 }
 
-.w, .w-50-last, .w-min, .w-16-fixed, .w-20-fixed, .w-24-fixed, .w-32-fixed, .w-48-fixed, .w-64-fixed, .w-128-fixed, .w-256-fixed, .w-max-content, .w-min-content, .w-15, .w-20, .w-25, .w-33, .w-40, .w-50, .w-60, .w-66, .w-75, .w-100, .w-flex-3, .w-flex-2, .w-flex-1 {
+.w, .w-50-last, .w-min, .w-16-fixed, .w-20-fixed, .w-24p, .w-32-fixed, .w-48-fixed, .w-64-fixed, .w-128-fixed, .w-256-fixed, .w-max-content, .w-min-content, .w-15, .w-20, .w-25, .w-33, .w-40, .w-50, .w-60, .w-66, .w-75, .w-100, .w-flex-3, .w-flex-2, .w-flex-1 {
   width: auto;
 }
 .w-flex-1 {
@@ -2340,7 +2339,7 @@ table {
 .w-32-fixed {
   width: 2rem;
 }
-.w-24-fixed {
+.w-24p {
   width: 1.5rem;
 }
 .w-20-fixed {
@@ -2935,6 +2934,26 @@ table {
   }
 }
 
+.home-btn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  height: 4rem;
+  left: -0.5rem;
+  padding: 1.375rem 1.375rem;
+  position: absolute;
+  top: -0.5rem;
+  width: 4rem;
+  z-index: 666;
+}
+@media (min-width: 80rem) {
+  .home-btn {
+    display: none;
+  }
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3001,7 +3020,7 @@ nav .nav-box .nav-content {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  padding: 1.25vw;
+  padding: calc(0.5rem + 0.625vw);
   width: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -3225,50 +3244,21 @@ nav .nav-box .nav-content {
   justify-content: center;
 }
 
-.logo-box {
-  aspect-ratio: 4.75/1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: calc(1rem + 1.25vw);
-}
-
 .nav-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 7.5vmin;
-  height: 3.5rem;
-  width: 100%;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  gap: 1.5rem;
+  height: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-@media (min-width: 40rem) {
-  .nav-btns {
-    gap: 2.5vmin;
-  }
-}
-@media (min-width: 80rem) {
-  .nav-btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 1.5rem;
-    height: calc(1rem + 1.25vw);
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
 }
 
 .burger-btn {
@@ -3367,7 +3357,7 @@ nav .nav-box .nav-content {
   left: 0;
   opacity: 0;
   overflow: auto;
-  padding: 5vmin 10vmin 10vmin 10vmin;
+  padding: 17.5vmin 7.5vmin 7.5vmin 7.5vmin;
   position: absolute;
   top: 25vh;
   visibility: hidden;
@@ -3377,7 +3367,7 @@ nav .nav-box .nav-content {
 }
 @media (min-width: 40rem) {
   .mobile-nav {
-    padding: 2.5vmin;
+    padding: 5vmin;
   }
 }
 @media (min-width: 80rem) {
@@ -3407,12 +3397,6 @@ nav .nav-box .nav-content {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
   list-style: none;
   width: 100%;
 }
@@ -3420,10 +3404,6 @@ nav .nav-box .nav-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -3440,18 +3420,15 @@ nav .nav-box .nav-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  gap: 1rem;
   height: 100%;
   width: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   text-decoration: none;
 }
@@ -3464,12 +3441,6 @@ nav .nav-box .nav-content {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-}
-.mobile-nav .mobile-nav-content ul li a .icon {
-  rotate: 90deg;
-  stroke: hsl(var(--clr-n-65)/75%);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .mobile-nav-mask {
@@ -3984,7 +3955,24 @@ nav .nav-box .nav-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: calc(1rem + 1.25vw);
+  height: 100%;
+}
+
+.logo-box-mobile {
+  aspect-ratio: 3.68125/1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2rem;
+  left: 1.5rem;
+  position: absolute;
+  top: 1.5rem;
+  z-index: 666;
+}
+@media (min-width: 80rem) {
+  .logo-box-mobile {
+    display: none;
+  }
 }
 
 .service-1 {
@@ -4437,6 +4425,30 @@ nav .nav-box .nav-content {
 
 .logo {
   background-image: url("../assets/hcf-logo.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow-icon {
+  background-image: url("../assets/arrow-ico.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.home-icon {
+  background-image: url("../assets/home-ico.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
