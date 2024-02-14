@@ -30,187 +30,359 @@
 
         <nav>
 
-   <div class="desktop-nav">
+    <input type="checkbox" id="toggler">
 
-      <a href="index.html" target="_self" class="logo-box fill-logo">
+        <label class="burger-btn" for="toggler">
 
-         <svg viewBox="0 0 533.816 160">
-            <path d="m500.475,86.984c12.916,0,24.285-6.208,30.885-15.598.822-1.168.393-2.812-.882-3.468l-12.166-6.28c-1.085-.56-2.383-.179-3.075.834-3.217,4.731-8.626,7.841-14.775,7.841-4.588,0-8.652-2.705-11.272-6.899l42.741-9.354c1.12-.25,1.907-1.263,1.883-2.407-.405-18.72-15.181-33.769-33.352-33.769-18.422,0-33.365,15.467-33.365,34.556.013,19.077,14.954,34.544,33.377,34.544Zm0-52.429c5.326,0,9.949,3.646,12.416,9.032l-26.488,5.791c1.155-8.413,7.006-14.823,14.072-14.823Z"/>
-            <path d="m429.564,85.793h14.299c1.311,0,2.383-1.072,2.383-2.383v-37.725c0-5.803,4.432-10.843,10.224-11.117,2.014-.095,3.908.369,5.541,1.251,1.001.536,2.252.262,2.967-.632l8.425-10.629c.929-1.168.56-2.884-.751-3.587-3.622-1.978-7.733-3.098-12.106-3.098-5.279,0-10.189,1.632-14.299,4.444v-.87c0-1.311-1.072-2.383-2.383-2.383h-14.299c-1.31,0-2.382,1.072-2.382,2.383v61.962c0,1.311,1.072,2.383,2.382,2.383Z"/>
-            <path d="m386.072,61.365c4.935,0,8.937-4.001,8.937-8.937s-4.002-8.937-8.937-8.937-8.937,4.001-8.937,8.937,4.001,8.937,8.937,8.937Z"/>
-            <path d="m386.072,17.873c-20.4,0-36.939,15.467-36.939,34.556s16.539,34.556,36.939,34.556,36.939-15.467,36.939-34.556-16.539-34.556-36.939-34.556Zm0,52.429c-9.867,0-17.874-8.007-17.874-17.874s8.007-17.874,17.874-17.874,17.873,8.007,17.873,17.874-7.995,17.874-17.873,17.874Z"/>
-            <path d="m331.258,86.984c7.257,0,14.025-1.966,19.733-5.35,1.24-.727,1.525-2.407.632-3.527l-7.877-9.938c-.762-.965-2.109-1.156-3.157-.512-3.265,2.014-7.221,3.003-11.439,2.514-8.174-.941-14.764-7.567-15.657-15.753-1.168-10.772,7.233-19.875,17.766-19.875,3.42,0,6.614.965,9.33,2.645,1.048.643,2.395.441,3.157-.512l7.877-9.938c.894-1.12.608-2.8-.632-3.527-5.707-3.384-12.476-5.35-19.733-5.35-20.4,0-36.939,15.467-36.939,34.556s16.539,34.568,36.939,34.568Z"/>
-            <path d="m299.275,80.788l-7.9-9.962c-.619-.775-1.668-1.156-2.609-.81-.501.191-1.048.286-1.621.286-2.669-.012-4.742-2.359-4.742-5.028v-30.719h10.224c1.31,0,2.383-1.072,2.383-2.383v-11.916c0-1.311-1.073-2.383-2.383-2.383h-10.224V2.382c0-1.525-1.406-2.657-2.895-2.324l-14.299,3.122c-1.097.238-1.87,1.203-1.87,2.324v12.357h-4.767c-1.31,0-2.383,1.072-2.383,2.383v11.916c0,1.311,1.073,2.383,2.383,2.383h4.767v30.981c0,11.844,10.664,21.448,23.831,21.448,4.063,0,7.876-.929,11.224-2.538,1.395-.667,1.835-2.431.882-3.646Z"/>
-            <path d="m248.838,17.885c-4.766.477-9.163,2.216-12.904,4.897v-1.466c0-1.311-1.072-2.383-2.383-2.383h-14.299c-1.31,0-2.383,1.072-2.383,2.383v61.962c0,1.311,1.073,2.383,2.383,2.383h14.299c1.311,0,2.383-1.072,2.383-2.383v-36.939c0-6.578,5.338-11.916,11.916-11.916h1.192c1.31,0,2.383-1.072,2.383-2.383v-11.785c0-1.382-1.192-2.514-2.586-2.371Z"/>
-            <path d="m206.141,19.064h-14.298c-1.311,0-2.383,1.072-2.383,2.383v2.633c-5.41-3.908-11.976-6.208-19.066-6.208-18.421,0-33.364,15.467-33.364,34.556s14.942,34.556,33.364,34.556c7.09,0,13.656-2.3,19.066-6.208v2.633c0,1.311,1.072,2.383,2.383,2.383h14.298c1.311,0,2.383-1.072,2.383-2.383V21.448c0-1.323-1.06-2.383-2.383-2.383Zm-33.364,51.238c-9.211,0-16.682-8.007-16.682-17.874s7.472-17.874,16.682-17.874,16.682,8.007,16.682,17.874-7.472,17.874-16.682,17.874Z"/>
-            <path d="m131.298,67.919l-12.166-6.28c-1.085-.56-2.383-.179-3.075.834-3.217,4.731-8.627,7.841-14.775,7.841-4.588,0-8.652-2.705-11.273-6.899l42.742-9.354c1.12-.25,1.907-1.263,1.883-2.407-.405-18.72-15.181-33.769-33.352-33.769-18.422,0-33.364,15.467-33.364,34.556s14.942,34.556,33.364,34.556c12.916,0,24.284-6.208,30.885-15.598.834-1.192.405-2.824-.87-3.479Zm-30.004-33.364c5.326,0,9.949,3.646,12.416,9.032l-26.489,5.791c1.156-8.413,7.006-14.823,14.073-14.823Z"/>
-            <path d="m2.383,85.793h14.299c1.311,0,2.383-1.072,2.383-2.383v-34.127c0-7.221,5.648-13.405,12.857-13.536,7.352-.131,13.358,5.779,13.358,13.107v34.556c0,1.311,1.072,2.383,2.383,2.383h14.299c1.311,0,2.383-1.072,2.383-2.383v-33.888c0-16.503-13.143-30.385-29.658-30.457-5.731-.024-11.082,1.561-15.622,4.337V2.382c0-1.525-1.406-2.657-2.896-2.324L1.871,3.181c-1.096.238-1.871,1.203-1.871,2.324v77.893c0,1.323,1.072,2.395,2.383,2.395Z"/>
-            <path d="m316.198,137.614c.944-.919,2.045-1.626,3.296-2.127,1.276-.502,2.68-.749,4.207-.749s2.947.294,4.253.876c1.306.557,2.488,1.404,3.543,2.544l3.501-3.293c-1.361-1.611-3.029-2.82-5.002-3.628-1.973-.834-4.155-1.251-6.542-1.251-2.254,0-4.322.374-6.214,1.126-1.889.723-3.543,1.765-4.961,3.126-1.416,1.336-2.514,2.918-3.292,4.752-.778,1.833-1.165,3.836-1.165,6.002s.387,4.169,1.165,6.002c.778,1.834,1.863,3.433,3.251,4.794,1.42,1.336,3.071,2.378,4.963,3.126,1.915.723,3.985,1.085,6.21,1.085,2.416,0,4.612-.417,6.584-1.251,1.974-.834,3.641-2.042,5.002-3.628l-3.501-3.335c-1.055,1.165-2.237,2.042-3.543,2.624-1.306.557-2.722.834-4.253.834s-2.932-.251-4.207-.749c-1.251-.502-2.352-1.209-3.296-2.127-.915-.919-1.638-2-2.166-3.251-.502-1.251-.752-2.624-.752-4.126s.25-2.875.752-4.126c.527-1.251,1.251-2.335,2.166-3.253Z"/>
-            <path d="m102.55,159.583h5.422v-11.171h14.089v-4.585h-14.089v-8.881h15.879v-4.543h-21.301v29.18Z"/>
-            <path d="m148.267,130.403h-5.419v29.18h5.419v-29.18Z"/>
-            <path d="m174.379,130.403l16.088,19.755v-19.755h5.38v29.18h-4.461l-16.092-19.755v19.755h-5.377v-29.18h4.461Z"/>
-            <path d="m226.424,130.403l-13.131,29.18h5.589l2.889-6.754h14.594l2.902,6.754h5.669l-13.173-29.18h-5.338Zm-2.833,18.176l5.464-12.769,5.484,12.769h-10.949Z"/>
-            <path d="m266.863,130.403l16.088,19.755v-19.755h5.38v29.18h-4.462l-16.091-19.758v19.758h-5.377v-29.18h4.462Z"/>
-            <path d="m353.949,130.403h5.419v29.18h-5.419v-29.18Z"/>
-            <path d="m390.021,130.403l-13.131,29.18h5.585l2.889-6.754h14.593l2.902,6.754h5.67l-13.174-29.18h-5.334Zm-2.836,18.176l5.464-12.769,5.484,12.769h-10.949Z"/>
-            <path d="m431.416,130.403v24.594h15.254v4.585h-20.673v-29.18h5.419Z"/>
-         </svg>
+            <div></div>
+            <div></div>
+            <div></div>
 
-      </a>
+        </label>
 
-      <ul>
+    </input>
 
-         <li>
+    <div class="nav-box">
 
-            <div class="btn-box">
+        <div class="nav-content">
 
-               <a href="services.html" target="_self" class="nav-btn">
+            <div class="desktop-nav g-respo-lg">
 
-                  <div class="body regular line-100 font-fix-2">Services</div>
-   
-               </a>
+                <div class="nav-side-left">
+
+                    <a role="button" href="index.html" class="logo-box" target="_self">
+
+                        <div class="logo"></div>
+
+                    </a>
+
+                </div>
+
+                <ul>
+
+                    <li>
+      
+                        <a role="button" href="" target="_self">
+      
+                            <p class="body regular line-150 font-fix-2">サービス</p>
+     
+                        </a>
+      
+                    </li>
+
+                    <li>
+      
+                        <a role="button" href="" target="_self">
+      
+                            <p class="body regular line-150 font-fix-2">企業情報</p>
+     
+                        </a>
+      
+                    </li>
+
+                    <li>
+      
+                        <a role="button" href="markets.html" target="_self">
+        
+                            <p class="body regular line-150 font-fix-2">米国株式市場について</p>
+       
+                            <div class="icon w-16p square">
+       
+                                <svg width="8" height="16" viewBox="0 0 8 16">
+       
+                                    <path d="M2.16992 1.5L6.50326 8L2.16992 14.5" fill="none" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+       
+                                </svg>
+       
+                            </div>
+       
+                        </a>
+    
+                        <div class="dropdown-menu">
+    
+                            <div class="pointer">
+       
+                                <svg width="16" height="8" viewBox="0 0 16 8">
+                                
+                                    <path d="m7.293.309L0,8h16L8.707.309c-.391-.412-1.024-.412-1.414,0Z" stroke-width="0"/>
+                            
+                                </svg>
+       
+                            </div>
+    
+                            <div class="dropdown-box p-static-sm">
+          
+                                <a role="button" href="" class="p-static-xs-vertical" target="_self">
+
+                                    <div class="item-column">
+
+                                        <p class="body regular line-150">Nasdaqとは？</p>
+
+                                    </div>
+             
+                                </a>
+
+                                <a role="button" href="" class="p-static-xs-vertical" target="_self">
+
+                                    <div class="item-column">
+
+                                        <p class="body regular line-150">NYSEとは？</p>
+
+                                    </div>
+             
+                                </a>
+    
+                            </div>
+    
+                        </div>
+        
+                    </li>
+
+                    <li>
+      
+                        <a role="button" href="" target="_self">
+      
+                            <p class="body regular line-150 font-fix-2">一般事例</p>
+     
+                        </a>
+      
+                    </li>
+
+                    <li>
+      
+                        <a role="button" href="" target="_self">
+      
+                            <p class="body regular line-150 font-fix-2">ニュース・イベント</p>
+     
+                        </a>
+      
+                    </li>
+      
+                </ul>
+
+                <div class="nav-side-right">
+
+                    <div class="nav-btns g-static-sm">
+
+                        <a role="button" href="" class="btn-txt g-static-tn" target="_self">
+
+                            <svg id="a" width="20" height="20" viewBox="0 0 24 24">
+                            
+                                <defs>
+
+                                    <style>.f{stroke:url(#b);stroke-width:1.5px;}.f,.g,.h{fill:none;stroke-linecap:round;stroke-linejoin:round;}.g{stroke:url(#d);}.g,.h{stroke-width:2px;}.h{stroke:url(#c);}.i{fill:url(#e);stroke-width:0px;}</style>
+                                    
+                                    <radialGradient id="b" cx="-61.625" cy="30" fx="-61.625" fy="30" r="1" gradientTransform="translate(578.999 2378.999) rotate(45) scale(33.941 -42.426)" gradientUnits="userSpaceOnUse">
+                                        
+                                        <stop offset=".147" stop-color="#E6E6E6"/>
+                                        <stop offset=".855" stop-color="#999999"/>
+                                    
+                                    </radialGradient>
+                                    
+                                    <radialGradient id="c" cx=".024" cy="-65.8" fx=".024" fy="-65.8" r="1" gradientTransform="translate(11.993 16.345) rotate(.573) scale(1 -.025)" gradientUnits="userSpaceOnUse">
+                                        
+                                        <stop offset=".147" stop-color="#E6E6E6"/>
+                                        <stop offset=".855" stop-color="#999999"/>
+                                    
+                                    </radialGradient>
+                                    
+                                    <radialGradient id="d" cx="-61.004" cy="31.754" fx="-61.004" fy="31.754" r="1" gradientTransform="translate(-47.278 1188.258) rotate(61.113) scale(16.56 -19.505)" gradientUnits="userSpaceOnUse">
+                                        
+                                        <stop offset=".147" stop-color="#E6E6E6"/>
+                                        <stop offset=".855" stop-color="#999999"/>
+                                    
+                                    </radialGradient>
+                                    
+                                    <radialGradient id="e" cx="-46.5" cy="44" fx="-46.5" fy="44" r="1" gradientTransform="translate(16 198) rotate(45) scale(2.828 -2.828)" gradientUnits="userSpaceOnUse">
+                                        
+                                        <stop offset=".147" stop-color="#E6E6E6"/>
+                                        <stop offset=".855" stop-color="#999999"/>
+                                    
+                                    </radialGradient>
+                                
+                                </defs>
+                                
+                                <path class="f" d="m23.25,12c0,6.213-5.037,11.25-11.25,11.25S.75,18.213.75,12,5.787.75,12,.75s11.25,5.037,11.25,11.25Z"/>
+                                <path class="h" d="m12,17.99v.01"/>
+                                <path class="g" d="m9,9.024c0-1.659,1.355-3.024,3-3.024s3,1.366,3,3.024c0,3.024-3,2.439-3,4.976v.5"/>
+                                <circle class="i" cx="12" cy="18" r="1"/>
+                                
+                            </svg>
+
+                            <p class="body regular line-150 font-fix-2">FAQ</p>
+ 
+                        </a>
+
+                        <a role="button" href="contact.html" class="btn-plain ghost p-static-md-vertical rounded-xs">
+
+                            <p class="body regular line-100 font-fix-2">お問い合わせ</p>
+            
+                        </a>
+
+                    </div>
+                
+                </div>
 
             </div>
 
-         </li>
+            <div class="mobile-nav">
 
-         <li>
+                <div class="mobile-nav-content">
 
-            <div class="btn-box">
+                    <ul>
 
-               <a href="about.html" target="_self" class="nav-btn">
+                        <li>
+          
+                            <a role="button" href="" target="_self">
+          
+                                <p class="body regular line-150 font-fix-2">サービス</p>
+         
+                            </a>
+          
+                        </li>
 
-                  <div class="body regular line-100 font-fix-2">About Us</div>
-   
-               </a>
+                        <div class="divider-h w-100 bg-clr-pri-20"></div>
 
+                        <li>
+          
+                            <a role="button" href="" target="_self">
+          
+                                <p class="body regular line-150 font-fix-2">企業情報</p>
+         
+                            </a>
+          
+                        </li>
+
+                        <div class="divider-h w-100 bg-clr-pri-20"></div>
+    
+                        <li>
+          
+                            <a role="button" href="markets.html" target="_self">
+            
+                                <p class="body regular line-150 font-fix-2">米国株式市場について</p>
+           
+                            </a>
+            
+                        </li>
+
+                        <div class="divider-h w-100 bg-clr-pri-20"></div>
+
+                        <li>
+          
+                            <a role="button" href="" target="_self" class="p-static-xs-vertical">
+
+                                <p class="body regular line-150 font-fix-2">Nasdaqとは？</p>
+         
+                            </a>
+          
+                        </li>
+
+                        <div class="divider-h w-100 bg-clr-pri-20"></div>
+
+                        <li>
+          
+                            <a role="button" href="" target="_self" class="p-static-xs-vertical">
+
+                                <p class="body regular line-150 font-fix-2">NYSEとは？</p>
+         
+                            </a>
+          
+                        </li>
+
+                        <div class="divider-h w-100 bg-clr-pri-20"></div>
+    
+                        <li>
+          
+                            <a role="button" href="" target="_self">
+          
+                                <p class="body regular line-150 font-fix-2">一般事例</p>
+         
+                            </a>
+          
+                        </li>
+
+                        <div class="divider-h w-100 bg-clr-pri-20"></div>
+    
+                        <li>
+          
+                            <a role="button" href="" target="_self">
+          
+                                <p class="body regular line-150 font-fix-2">ニュース・イベント</p>
+         
+                            </a>
+          
+                        </li>
+          
+                    </ul>
+
+                    <div class="item-column w-100 h-100 g-static-xs jc-end">
+
+                        <a role="button" href="" class="btn-txt g-static-tn" target="_self">
+    
+                            <svg id="a" width="20" height="20" viewBox="0 0 24 24">
+                        
+                                <defs>
+    
+                                    <style>.f{stroke:url(#b);stroke-width:1.5px;}.f,.g,.h{fill:none;stroke-linecap:round;stroke-linejoin:round;}.g{stroke:url(#d);}.g,.h{stroke-width:2px;}.h{stroke:url(#c);}.i{fill:url(#e);stroke-width:0px;}</style>
+                                    
+                                    <radialGradient id="b" cx="-61.625" cy="30" fx="-61.625" fy="30" r="1" gradientTransform="translate(578.999 2378.999) rotate(45) scale(33.941 -42.426)" gradientUnits="userSpaceOnUse">
+                                        
+                                        <stop offset=".147" stop-color="#E6E6E6"/>
+                                        <stop offset=".855" stop-color="#999999"/>
+                                    
+                                    </radialGradient>
+                                    
+                                    <radialGradient id="c" cx=".024" cy="-65.8" fx=".024" fy="-65.8" r="1" gradientTransform="translate(11.993 16.345) rotate(.573) scale(1 -.025)" gradientUnits="userSpaceOnUse">
+                                        
+                                        <stop offset=".147" stop-color="#E6E6E6"/>
+                                        <stop offset=".855" stop-color="#999999"/>
+                                    
+                                    </radialGradient>
+                                    
+                                    <radialGradient id="d" cx="-61.004" cy="31.754" fx="-61.004" fy="31.754" r="1" gradientTransform="translate(-47.278 1188.258) rotate(61.113) scale(16.56 -19.505)" gradientUnits="userSpaceOnUse">
+                                        
+                                        <stop offset=".147" stop-color="#E6E6E6"/>
+                                        <stop offset=".855" stop-color="#999999"/>
+                                    
+                                    </radialGradient>
+                                    
+                                    <radialGradient id="e" cx="-46.5" cy="44" fx="-46.5" fy="44" r="1" gradientTransform="translate(16 198) rotate(45) scale(2.828 -2.828)" gradientUnits="userSpaceOnUse">
+                                        
+                                        <stop offset=".147" stop-color="#E6E6E6"/>
+                                        <stop offset=".855" stop-color="#999999"/>
+                                    
+                                    </radialGradient>
+                                
+                                </defs>
+                                
+                                <path class="f" d="m23.25,12c0,6.213-5.037,11.25-11.25,11.25S.75,18.213.75,12,5.787.75,12,.75s11.25,5.037,11.25,11.25Z"/>
+                                <path class="h" d="m12,17.99v.01"/>
+                                <path class="g" d="m9,9.024c0-1.659,1.355-3.024,3-3.024s3,1.366,3,3.024c0,3.024-3,2.439-3,4.976v.5"/>
+                                <circle class="i" cx="12" cy="18" r="1"/>
+                                
+                            </svg>
+    
+                            <p class="body regular line-150 font-fix-2">FAQ</p>
+    
+                        </a>
+    
+                        <a role="button" href="contact.html" class="btn-plain ghost h-64p p-static-md-vertical rounded-xs">
+        
+                            <p class="body-xl regular line-100 font-fix-2">お問い合わせ</p>
+            
+                        </a>
+
+                    </div>
+
+                </div>
+                
             </div>
 
-         </li>
-
-         <li>
-
-            <div class="btn-box">
-
-               <a href="markets.html" target="_self" class="nav-btn">
-
-                  <div class="body regular line-100 font-fix-2">US Stock Markets</div>
-   
-                  <div class="item w-16-fixed h-16-fixed jc-center ai-center">
-   
-                     <svg width="8" height="16" viewBox="0 0 8 16">
-   
-                        <path d="M2.16992 1.5L6.50326 8L2.16992 14.5" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-   
-                     </svg>
-   
-                  </div>
-   
-               </a>
-
-               <div class="dropdown-claster">
-
-                  <div class="pointer">
-   
-                     <svg width="16" height="8" viewBox="0 0 16 8">
-                        <path d="m7.293.309L0,8h16L8.707.309c-.391-.412-1.024-.412-1.414,0Z" stroke-width="0"/>
-                     </svg>
-   
-                  </div>
-
-                  <div class="dropdown-box p-static-sm">
-      
-                     <a href="markets.html#nasdaq" target="_self" class="dropdown-item p-static-xs-vertical">
-      
-                        <ul>
-      
-                           <li class="bullet-primary-light-sm">
-                           
-                              <div class="body regular line-150 font-fix-2">What is NASDAQ</div>
-         
-                           </li>
-         
-                        </ul>
-         
-                     </a>
-
-                     <a href="markets.html#faq" target="_self" class="dropdown-item p-static-xs-vertical">
-      
-                        <ul>
-         
-                           <li class="bullet-primary-light-sm">
-                              
-                              <div class="body regular line-150 font-fix-2">よくある質問</div>
-         
-                           </li>
-         
-                        </ul>
-         
-                     </a>
-
-                     <a href="markets.html#nyse" target="_self" class="dropdown-item p-static-xs-vertical">
-      
-                        <ul>
-         
-                           <li class="bullet-primary-light-sm">
-                              
-                              <div class="body regular line-150 font-fix-2">What is NYSE</div>
-         
-                           </li>
-         
-                        </ul>
-         
-                     </a>
-
-                  </div>
-
-               </div>
-
-            </div>
-
-         </li>
-
-         <li>
-
-            <div class="btn-box">
-
-               <a href="cases.html" target="_self" class="nav-btn">
-
-                  <div class="body regular line-100 font-fix-2">Case studies</div>
-   
-               </a>
-
-            </div>
-
-         </li>
-
-         <li>
-
-            <div class="btn-box">
-
-               <a href="pressroom.html" target="_self" class="nav-btn">
-
-                  <div class="body regular line-100 font-fix-2">Pressroom</div>
-   
-               </a>
-
-            </div>
-
-         </li>
-
-      </ul>
-
-      <div class="buttons-box">
-
-         <a role="button" href="contact.html" class="btn flat light p-static-md-vertical rounded-xs">
-
-            <div class="body bold line-100 font-fix-2">Contact</div>
-
-         </a>
-
-      </div>
+        </div>
 
    </div>
+
+   <div class="mobile-nav-mask"></div>
 
 </nav>
 
