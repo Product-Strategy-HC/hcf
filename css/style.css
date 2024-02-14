@@ -1600,6 +1600,7 @@
 
 .hero-large {
   height: 95dvh;
+  position: relative;
 }
 @media (min-width: 80rem) {
   .hero-large {
@@ -2105,7 +2106,7 @@ a {
 }
 
 .indicator {
-  bottom: calc(2rem + 2.5vmax - 1.25rem);
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2117,25 +2118,13 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%, 83.3333333333%);
+  transform: translate(-50%, 83.3333333333%);
 }
-
-.indicator-sub {
-  bottom: -1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  left: 50%;
-  position: absolute;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%);
+@media (min-width: 80rem) {
+  .indicator {
+    bottom: 0;
+  }
 }
 
 .indicator-icon {
