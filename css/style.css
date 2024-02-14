@@ -1612,6 +1612,7 @@
 .hero-small {
   height: 50vh;
   padding: 0;
+  position: relative;
 }
 @media (min-width: 40rem) {
   .hero-small {
@@ -2120,11 +2121,6 @@ a {
   align-items: center;
   -webkit-transform: translate(-50%, 83.3333333333%);
   transform: translate(-50%, 83.3333333333%);
-}
-@media (min-width: 80rem) {
-  .indicator {
-    bottom: 0;
-  }
 }
 
 .indicator-icon {
@@ -2866,7 +2862,7 @@ table {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 5rem 7.5vmin 15vmin 7.5vmin;
+  padding: 5rem 7.5vmin 7.5vmin 7.5vmin;
 }
 @media (min-width: 40rem) {
   .hero-box {
