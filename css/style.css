@@ -2179,6 +2179,8 @@ table {
   table-layout: auto;
   white-space: nowrap;
   width: 100%;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
 }
 .table-pri th {
   background: hsl(var(--clr-pri-30)/100%);
