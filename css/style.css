@@ -3385,7 +3385,7 @@ nav .nav-box .nav-content {
 }
 @media (min-width: 40rem) {
   .mobile-nav {
-    padding: 5vmin;
+    padding: 3.5rem 5vmin 5vmin 5vmin;
   }
 }
 @media (min-width: 80rem) {
