@@ -1599,7 +1599,7 @@
 }
 
 .hero-large {
-  height: 95vh;
+  height: 95dvh;
 }
 @media (min-width: 80rem) {
   .hero-large {
@@ -3328,7 +3328,7 @@ nav .nav-box .nav-content {
   transform-origin: left bottom;
 }
 #toggler:checked ~ .nav-box {
-  height: 100vh;
+  height: 100dvh;
   padding: 1rem;
   width: 100vw;
 }
