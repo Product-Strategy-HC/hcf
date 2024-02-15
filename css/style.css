@@ -168,7 +168,7 @@
 }
 
 .sa-horizontal {
-  padding: 7.5vw 0;
+  padding: 15vmin 0;
 }
 @media (min-width: 80rem) {
   .sa-horizontal {
@@ -191,7 +191,7 @@
 }
 @media (min-width: 40rem) {
   .sa-vertical {
-    padding: 0 10vmin;
+    padding: 0 7.5vmin;
   }
 }
 @media (min-width: 80rem) {
@@ -1610,13 +1610,12 @@
 }
 
 .hero-small {
-  height: 50vh;
-  padding: 0;
+  height: 33dvh;
   position: relative;
 }
 @media (min-width: 40rem) {
   .hero-small {
-    height: 50vh;
+    height: 33dvh;
   }
 }
 @media (min-width: 80rem) {
@@ -1687,9 +1686,13 @@
   transition: all 0.33s ease;
 }
 
-.hairline, .hairline-txt, .hairline-sec {
+.hairline, .hairline-txt, .hairline-sec, .hairline-pri {
   -webkit-box-shadow: 0 0 0 0.03125rem hsl(var(--clr-n-50)/25%) inset;
   box-shadow: 0 0 0 0.03125rem hsl(var(--clr-n-50)/25%) inset;
+}
+.hairline-pri {
+  -webkit-box-shadow: 0 0 0 0.03125rem hsl(var(--clr-pri-65)/100%) inset;
+  box-shadow: 0 0 0 0.03125rem hsl(var(--clr-pri-65)/100%) inset;
 }
 .hairline-sec {
   -webkit-box-shadow: 0 0 0 0.03125rem hsl(var(--clr-sec-65)/100%) inset;
@@ -2962,6 +2965,41 @@ table {
   box-shadow: 0 0 0 0.03125rem hsl(var(--clr-sec-50)/50%) inset, 0 1rem 0.75rem -0.5rem hsl(var(--clr-sec-35)/10%), 0 3rem 6rem 0 hsl(var(--clr-sec-35)/10%);
 }
 
+.service-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: hsl(var(--clr-n-100)/100%);
+  gap: 7.5vmin;
+  padding: 7.5vmin;
+  -webkit-box-shadow: 0 0 0 0.0625rem hsl(var(--clr-sec-65)/50%) inset;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0 0.0625rem hsl(var(--clr-sec-65)/50%) inset;
+}
+@media (min-width: 40rem) {
+  .service-box {
+    gap: 5vmin;
+    padding: 5vmin;
+  }
+}
+@media (min-width: 80rem) {
+  .service-box {
+    gap: 2.5vw;
+    padding: 2.5vw;
+  }
+}
+
 .service-icon {
   background: hsl(var(--clr-pri-97)/100%);
   border-radius: 0.25rem;
@@ -2972,8 +3010,8 @@ table {
   min-width: 4rem;
   padding: 0.75rem;
   width: 4rem;
-  -webkit-box-shadow: 0 0 0 0.03125rem hsl(var(--clr-sec-50)/50%);
-  box-shadow: 0 0 0 0.03125rem hsl(var(--clr-sec-50)/50%);
+  -webkit-box-shadow: 0 0 0 0.0625rem hsl(var(--clr-sec-65)/50%) inset;
+  box-shadow: 0 0 0 0.0625rem hsl(var(--clr-sec-65)/50%) inset;
   overflow: hidden;
 }
 
