@@ -499,16 +499,46 @@
   }
 }
 .g-respo-lg {
-  gap: 3.75vw;
+  gap: 10vmin;
+}
+@media (min-width: 40rem) {
+  .g-respo-lg {
+    gap: 7.5vmin;
+  }
+}
+@media (min-width: 80rem) {
+  .g-respo-lg {
+    gap: 3.75vw;
+  }
 }
 .g-respo-xl {
-  gap: 5vw;
+  gap: 15vmin;
+}
+@media (min-width: 40rem) {
+  .g-respo-xl {
+    gap: 10vmin;
+  }
+}
+@media (min-width: 80rem) {
+  .g-respo-xl {
+    gap: 5vw;
+  }
 }
 .g-respo-hg {
   gap: 7.5vw;
 }
 .g-respo-xh {
-  gap: 10vw;
+  gap: 20vmin;
+}
+@media (min-width: 40rem) {
+  .g-respo-xh {
+    gap: 20vmin;
+  }
+}
+@media (min-width: 80rem) {
+  .g-respo-xh {
+    gap: 10vw;
+  }
 }
 
 .g-static, .g-static-xh, .g-static-hg, .g-static-xl, .g-static-lg, .g-static-md, .g-static-sm, .g-static-xs, .g-static-tn, .g-static-xt {
@@ -3296,7 +3326,7 @@ nav .nav-box .nav-content {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  width: 33%;
+  width: 15%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
