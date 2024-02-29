@@ -1668,8 +1668,7 @@
 }
 
 .style-card {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(var(--clr-sec-97)/100%)), to(hsl(var(--clr-n-100)/100%)));
-  background-image: linear-gradient(hsl(var(--clr-sec-97)/100%), hsl(var(--clr-n-100)/100%));
+  background: hsl(var(--clr-n-100));
   border-radius: 0.75rem;
   cursor: pointer;
   overflow: hidden;
@@ -1695,13 +1694,11 @@
 
 .style-card-plain {
   background: hsl(var(--clr-n-100));
+  border: solid hsl(var(--clr-sec-65)/50%) 0.03125rem;
   border-radius: 0.75rem;
-  cursor: pointer;
   overflow: hidden;
   -webkit-transition: all 0.33s ease;
   transition: all 0.33s ease;
-  -webkit-box-shadow: 0 0.25rem 0.25rem hsl(var(--clr-sec-35)/10%), 0 1rem 2rem 0 hsl(var(--clr-sec-35)/5%);
-  box-shadow: 0 0.25rem 0.25rem hsl(var(--clr-sec-35)/10%), 0 1rem 2rem 0 hsl(var(--clr-sec-35)/5%);
 }
 
 .style-framed {
@@ -2567,8 +2564,13 @@ table {
   line-height: 100%;
   text-decoration: underline;
 }
-.txt-btn:hover {
-  color: hsl(var(--clr-sec-60)/100%);
+@media (min-width: 80rem) {
+  .txt-btn {
+    text-decoration: none;
+  }
+  .txt-btn:hover {
+    text-decoration: underline;
+  }
 }
 
 .txt-btn-light {
@@ -3062,6 +3064,18 @@ table {
   .service-box .service-content {
     gap: 1.25vw;
   }
+}
+
+.ref-link {
+  bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 2rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 nav {
