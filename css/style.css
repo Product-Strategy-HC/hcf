@@ -203,6 +203,22 @@
   }
 }
 
+.sa-vertical-no-phone {
+  padding: 0;
+  -webkit-transition: all 0.33s ease;
+  transition: all 0.33s ease;
+}
+@media (min-width: 40rem) {
+  .sa-vertical-no-phone {
+    padding: 0 7.5vmin;
+  }
+}
+@media (min-width: 80rem) {
+  .sa-vertical-no-phone {
+    padding: 0 10vw;
+  }
+}
+
 .sa-bottom {
   padding: 0 0 7.5vmin 0;
 }
@@ -543,11 +559,11 @@
   }
 }
 .g-respo-xl {
-  gap: 10vmin;
+  gap: 15vmin;
 }
 @media (min-width: 40rem) {
   .g-respo-xl {
-    gap: 5vmin;
+    gap: 7.5vmin;
   }
 }
 @media (min-width: 80rem) {
@@ -1645,11 +1661,11 @@
   line-height: 200%;
 }
 
-.txt-center {
+.txt-center, .txt-center-only-mobile {
   text-align: center;
 }
 @media (min-width: 40rem) {
-  .txt-center.only-mobile {
+  .txt-center-only-mobile {
     text-align: left;
   }
 }
@@ -1870,8 +1886,8 @@
   box-shadow: 0 0 0 0.0625rem hsl(var(--clr-sec-85)/100%) inset;
 }
 .thin-pri {
-  -webkit-box-shadow: 0 0 0 0.0625rem hsl(var(--clr-sec-45)/100%) inset;
-  box-shadow: 0 0 0 0.0625rem hsl(var(--clr-sec-45)/100%) inset;
+  -webkit-box-shadow: 0 0 0 0.0625rem hsl(var(--clr-pri-45)/100%) inset;
+  box-shadow: 0 0 0 0.0625rem hsl(var(--clr-pri-45)/100%) inset;
 }
 .thin-txt {
   -webkit-box-shadow: 0 0 0 0.0625rem hsl(var(--clr-pri-15)/100%) inset;
@@ -2318,10 +2334,14 @@ a {
 
 .table-item {
   background: hsl(var(--clr-sec-95)/100%);
-  border-radius: 0.5rem;
   -webkit-box-shadow: 0 0 0 0.03125rem hsl(var(--clr-pri-15)/100%) inset;
   box-shadow: 0 0 0 0.03125rem hsl(var(--clr-pri-15)/100%) inset;
   overflow: auto;
+}
+@media (min-width: 40rem) {
+  .table-item {
+    border-radius: 0.5rem;
+  }
 }
 
 table {
@@ -2423,7 +2443,7 @@ table {
   flex: 5;
 }
 
-.w, .w-50-last, .w-min, .w-16p, .w-20-fixed, .w-24p, .w-32-fixed, .w-48p, .w-64p, .w-128-fixed, .w-256-fixed, .w-max-content, .w-min-content, .w-15, .w-20, .w-25, .w-33, .w-40, .w-50, .w-60, .w-66, .w-75, .w-100, .w-flex-3, .w-flex-2, .w-flex-1 {
+.w, .w-50-last, .w-min, .w-16p, .w-20-fixed, .w-24p, .w-32p, .w-48p, .w-64p, .w-128-fixed, .w-256-fixed, .w-max-content, .w-min-content, .w-15, .w-20, .w-25, .w-33, .w-40, .w-50, .w-60, .w-66, .w-75, .w-100, .w-flex-3, .w-flex-2, .w-flex-1 {
   width: auto;
 }
 .w-flex-1 {
@@ -2493,7 +2513,7 @@ table {
 .w-48p {
   width: 3rem;
 }
-.w-32-fixed {
+.w-32p {
   width: 2rem;
 }
 .w-24p {
@@ -3458,7 +3478,7 @@ input[type=submit] {
   }
 }
 .title-row .title {
-  font-size: calc(1.16667rem + 0.41667vmin);
+  font-size: calc(1.33333rem + 0.83333vmin);
   font-weight: 600;
   line-height: 133%;
   text-align: center;
@@ -3466,7 +3486,7 @@ input[type=submit] {
 @media (min-width: 40rem) {
   .title-row .title {
     font-size: calc(1.33333rem + 0.83333vmin);
-    line-height: 100%;
+    line-height: 133%;
     text-align: left;
   }
 }
@@ -3506,7 +3526,7 @@ input[type=submit] {
   }
 }
 
-.case-data-box {
+.data-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3514,15 +3534,15 @@ input[type=submit] {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   width: 100%;
 }
 @media (min-width: 40rem) {
-  .case-data-box {
-    gap: 1rem;
+  .data-box {
+    gap: 1.5rem;
   }
 }
 
@@ -3642,6 +3662,49 @@ input[type=submit] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+.title-n-warning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+@media (min-width: 40rem) {
+  .title-n-warning {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+}
+
+.warning-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+@media (min-width: 40rem) {
+  .warning-msg {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -5037,7 +5100,8 @@ nav .nav-box .nav-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1rem;
+  height: 1.25rem;
+  min-width: 1rem;
   width: 1rem;
 }
 
